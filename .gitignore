@@ -1,0 +1,11 @@
+*.pyc
+__pycache__/
+
+*.swp
+
+cmath
+os
+pd
+
+figures/*
+results/*
