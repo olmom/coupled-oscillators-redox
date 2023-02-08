@@ -11,9 +11,10 @@ This repository contains the reproducible code for the generation of data, analy
 
 To execute this code:
 
-1. Clone this project at a suitable location. This will place the code within a    directory named **coupled-oscillators-redox**
-2. Make sure you have `Python` and basic libraries (`numpy`, `scipy`, `matplotlib`) installed
-3. Open the files and start reproducing results
+1. Clone this project at a suitable location. This will place the code within a directory named **coupled-oscillators-redox**
+2. Download all the simulated data from ([zenodo](https://www.zenodo.org/)) (or alternatively generate all the simulated data with *main.py* script
+3. Make sure you have `Python` and basic libraries (`numpy`, `scipy`, `matplotlib`) installed
+4. Open the files and start reproducing results
 
 The Python script used to generate the results is *main.py*, which relies on objects from the *poincare.py* script.
 
