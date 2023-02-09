@@ -89,10 +89,8 @@ for c in combinations:
 
         eqs = poincare_obj.f_PoincareGonze
         diff = sdeint_obj.G_PoincareGonze
-        #dW = sdeIntegrator.deltaW(N-1, np.shape(y0)[0], dt, generator)
         m = np.shape(y0)[0]
         dW = sdeint_obj.deltaW(N-1, m, dt, generator)
-        #solution = sdeIntegrator.itoEuler(eqs, diff, y0, t, dW=dW)
         solution = sdeint_obj.itoEuler(eqs, diff, y0, t, dW=dW, m=m)
 
         # save results
