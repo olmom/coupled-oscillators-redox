@@ -16,6 +16,6 @@ To execute this code:
 3. Make sure you have `Python` and basic libraries (`numpy`, `scipy`, `matplotlib`) installed
 4. Open the files and start reproducing results
 
-The Python script used to generate the results is *main.py*, which relies on objects from the *poincare.py* script.
+The Python script used to generate the results is *main.py*, which relies on objects from the *poincare.py* script. A solver for stochastic differential equations based on the Euler Maruyama method is also available in the same script as part of the `sdeIntegrator()` class.
 
 To reproduce the figures, the Python files can now be executed in order *fig1.py, fig2.py,* ... within the project.
