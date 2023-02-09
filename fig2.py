@@ -30,7 +30,7 @@ Kcoup = 0.00
 sigma = 0.05
 tausd = np.array([0.00,1.50])
 
-n_oscs =100
+n_oscs = 100
 total_simus = 50 
 initial_conditions = 'LC' #limit cycle initial conditions for
                           #fig2 (analysis of desync dynamics)

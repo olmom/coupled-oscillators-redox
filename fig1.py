@@ -159,12 +159,14 @@ poincare_obj = PoincareOscillator(amp = 1,
                                   K_coup = 0)
 sdeint_obj = sdeIntegrator(sig_x = 0.05,
                            sig_y = 0.05)
+
+m = np.shape(y0_P)[0] 
 ss = np.random.SeedSequence()
 generator = np.random.default_rng(ss)
 eqs = poincare_obj.f_PoincareGonze
 diff = sdeint_obj.G_PoincareGonze
-dW = sdeIntegrator.deltaW(len(t)-1, np.shape(y0_P)[0], dt_noisy, generator)
-solution_Poincare = sdeIntegrator.itoEuler(eqs, diff, y0_P, t_noisy, dW=dW)
+dW = sdeint_obj.deltaW(len(t)-1, m, dt_noisy, generator)
+solution_Poincare = sdeint_obj.itoEuler(eqs, diff, y0_P, t_noisy, dW=dW, m=m)
 
 fig1B = plt.figure(figsize=(3.66,5))
 axB = fig1B.add_subplot(111)
