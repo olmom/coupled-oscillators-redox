@@ -7,12 +7,12 @@
 
 # coupled-oscillators-redox
 
-This repository contains the reproducible code for the generation of data, analysis and figures in the manuscript "Coupling allows robust circadian rhythms despite heterogeneity and noise" ([preprint](https://www.biorxiv.org/)). 
+This repository contains the reproducible code for the generation of data, analysis and figures in the manuscript "Coupling allows robust circadian rhythms despite heterogeneity and noise" ([preprint](https://www.biorxiv.org/)). Note that the simulated data should be generated before (with the *main.py* script or downloaded from [zenodo](https://www.zenodo.org/).
 
 To execute this code:
 
 1. Clone this project at a suitable location. This will place the code within a directory named **coupled-oscillators-redox**
-2. Download all the simulated data from ([zenodo](https://www.zenodo.org/)) (or alternatively generate all the simulated data with *main.py* script
+2. Download all the simulated data from ([zenodo](https://www.zenodo.org/)) (or alternatively generate all the simulated data with the *main.py* script)
 3. Make sure you have `Python` and basic libraries (`numpy`, `scipy`, `matplotlib`) installed
 4. Open the files and start reproducing results
 
