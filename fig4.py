@@ -1,18 +1,9 @@
 #%% Load results and plot Figure 4B
 import matplotlib.pyplot as plt
 import numpy as np
-import math
-from scipy.signal import argrelextrema
-from scipy.integrate import odeint
-from scipy.optimize import curve_fit
 from scipy import signal
-from scipy.stats import norm
-import scipy.stats
 import pandas as pd
 import os
-import cmath
-from poincare import Fits 
-from poincare import RhythmicParameters 
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.size'] = '13'
@@ -25,7 +16,7 @@ plt.rcParams['axes.spines.right'] = False
 ########### PARAMETER CHOICE FOR FIG4 ###############
 #####################################################
 # for figure 4B: fixed Kc and variable TTFL input 
-Fzg = np.arange(0.000, 0.265, 0.005)
+Fzg = np.arange(0.000, 0.260, 0.005)
 Fzg_timeseries = [0.0, 0.07, 0.25]
 Kcoup = np.array([0.05])
 

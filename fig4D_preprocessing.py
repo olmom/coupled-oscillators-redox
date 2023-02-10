@@ -1,19 +1,8 @@
 #%% Load results and calculate minimum time for entrainment (mtfe)
 import matplotlib.pyplot as plt
 import numpy as np
-import math
-from scipy.signal import argrelextrema
-from scipy.integrate import odeint
-from scipy.optimize import curve_fit
 from scipy import signal
-from scipy.stats import norm
-import scipy.stats
 import pandas as pd
-import os
-import cmath
-from poincare import Fits 
-from poincare import RhythmicParameters 
-from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.size'] = '13'
 plt.rcParams['legend.fontsize'] = '12'

@@ -1,18 +1,11 @@
 #%% Load results and plot Figure 2A-C, Supplementary Figure 3
 import matplotlib.pyplot as plt
 import numpy as np
-import math
-from scipy.signal import argrelextrema
-from scipy.integrate import odeint
 from scipy.optimize import curve_fit
-from scipy import signal
-from scipy.stats import norm
 import pandas as pd
 import os
 import seaborn as sns
 from scipy.stats import circstd
-from scipy.stats import circmean
-import cmath
 from poincare import Fits 
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.size'] = '13'

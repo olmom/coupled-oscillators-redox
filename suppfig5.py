@@ -1,22 +1,12 @@
 #%% Load results and plot Supplementary Figure 5
 import matplotlib.pyplot as plt
 import numpy as np
-import math
 from scipy.signal import argrelextrema
-from scipy.integrate import odeint
-from scipy.optimize import curve_fit
-from scipy import signal
 import scipy.stats
 import pandas as pd
 import os
-import seaborn as sns
-from scipy.stats import circstd
-from scipy.stats import circmean
-import cmath
-#from itertools import product 
 from poincare import Fits 
 from poincare import RhythmicParameters 
-import statsmodels.api as sm
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.size'] = '13'
 plt.rcParams['legend.fontsize'] = '12'

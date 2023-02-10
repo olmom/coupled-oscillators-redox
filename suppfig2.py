@@ -2,19 +2,12 @@
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import numpy as np
-import math
 from scipy.signal import argrelextrema
 from scipy.integrate import odeint
-from scipy.optimize import curve_fit
 from scipy import signal
-from scipy.stats import norm
 import pandas as pd
 import os
-import seaborn as sns
 from scipy.stats import circstd
-from scipy.stats import circmean
-import cmath
-from poincare import Fits 
 from poincare import KineticOscillator
 from poincare import RhythmicParameters
 plt.rcParams['text.usetex'] = True

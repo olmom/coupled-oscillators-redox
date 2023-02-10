@@ -3,15 +3,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import math
-import matplotlib.pyplot as plt
-import numpy as np
-import math
 from scipy.signal import argrelextrema
 from scipy.integrate import odeint
 from scipy.optimize import curve_fit
-from scipy import signal
-from scipy.stats import norm
-import pandas as pd
 import os
 from poincare import KineticOscillator
 from poincare import sdeIntegrator
