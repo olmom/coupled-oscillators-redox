@@ -1,16 +1,8 @@
-import matplotlib.pyplot as plt
 import numpy as np
-import math
-from scipy.signal import argrelextrema
-from scipy.integrate import odeint
-from scipy.optimize import curve_fit
-from scipy import signal
-from scipy.stats import norm
 import pandas as pd
 import os
 from poincare import PoincareOscillator
 from poincare import sdeIntegrator
-from poincare import Fits 
 from poincare import RhythmicParameters 
 
 ######### CHOOSE PARAMETERS FOR SIMULATIONS ###########

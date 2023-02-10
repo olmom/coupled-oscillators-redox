@@ -1,6 +1,4 @@
 import numpy as np
-from scipy.integrate import odeint
-import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 from scipy.optimize import newton 
 import scipy.interpolate
@@ -361,7 +359,6 @@ class RhythmicParameters:
         singleosc = np.asarray(singleosc)
         results = []
         l = len(t)                         
-        mask = np.diff(singleosc >= 0.0)
         idx = np.arange(l, dtype=int)       
     
         for m in np.where(np.diff(singleosc >= 0 ) == True)[0]:
