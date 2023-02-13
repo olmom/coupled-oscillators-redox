@@ -7,13 +7,13 @@
 
 # coupled-oscillators-redox
 
-This repository contains the reproducible code for the generation of data, analysis and figures in the manuscript "Coupling allows robust circadian rhythms despite heterogeneity and noise" ([preprint](https://www.biorxiv.org/)). Note that the simulated data should be generated before (with the *main.py* script or downloaded from [here](https://www.zenodo.org/).
+This repository contains the reproducible code for the generation of data, analysis and figures in the manuscript "Coupling allows robust circadian rhythms despite heterogeneity and noise" ([preprint](https://www.biorxiv.org/)). Note that the simulated data should be generated before.
 
 To execute this code:
 
-1. Clone this project at a suitable location. This will place the code within a directory named **coupled-oscillators-redox**
-2. Generate the simulated data using the *main.py* script. To do this, check the parameter combinations that are needed to generate each figure in the header of the scripts *fig1.py*, *fig2.py* ... and introduce those as arrays in the header of the *main.py* script. When you run the *main.py* script, the results of the stochastic simulations will be saved in a folder called **results** within your directory
-  - Alternatively, all results are available on request and can be sent via *wetransfer* (note that this file will be in the order of ~90 GB)
+1. Clone this repository at a suitable location. This will place the code within a directory named **coupled-oscillators-redox**
+2. Generate the simulated data using the *main.py* script. To do this, check the parameter combinations that are needed to generate each figure in the header of the scripts *fig1.py*, *fig2.py* ... and introduce those as arrays in the header of the *main.py* script. When you run the *main.py* script, the results of the stochastic simulations will be saved in a folder called **results** within the project 
+   - Alternatively, all results are available on request and can be sent via *wetransfer* (note that this file will be in the order of ~90 GB)
 <!--2. Download all the simulated data from [here](https://www.zenodo.org/) (under the `results` folder) (or alternatively generate all the simulated data using the *main.py* script)-->
 3. Make sure you have `Python` and the following libraries installed: `numpy`, `scipy`, `matplotlib`, `statsmodels`, `pandas`, `seaborn`, `glob`
 4. To reproduce the figures, the Python files can now be executed in order *fig1.py*, *fig2.py,* ... within the project 
