@@ -7,7 +7,7 @@
 
 # coupled-oscillators-redox
 
-This repository contains the reproducible code for the generation of data, analysis and figures in the manuscript "Coupling allows robust circadian rhythms despite heterogeneity and noise" ([preprint](https://www.biorxiv.org/)). Note that the simulated data should be generated before.
+This repository contains the reproducible code for the generation of data, analysis and figures in the manuscript "Coupling allows robust circadian rhythms despite heterogeneity and noise" ([preprint](https://www.biorxiv.org/content/10.1101/2023.02.12.528191v1)). Note that the simulated data should be generated before.
 
 To execute this code:
 
