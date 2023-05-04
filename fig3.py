@@ -139,12 +139,38 @@ ax2.text(.05, 1.03, '$K_c={}$'.format(format(Kcoup[1], '.2f')),
 ax3.text(.05, 1.03, '$K_c={}$'.format(format(Kcoup[2], '.2f')), 
         ha='left', va='top', transform=ax3.transAxes)
 
+sm1 = plt.cm.ScalarMappable(norm=norm[0], cmap=cm)
+sm2 = plt.cm.ScalarMappable(norm=norm[1], cmap=cm)
+sm3 = plt.cm.ScalarMappable(norm=norm[2], cmap=cm)
+sm1.set_array([]); sm2.set_array([]); sm3.set_array([])
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+axins1 = inset_axes(ax1,width="3%",height="90%",loc='right',borderpad=-1.5)
+axins2 = inset_axes(ax2,width="3%",height="90%",loc='right',borderpad=-1.5)
+axins3 = inset_axes(ax3,width="3%",height="90%",loc='right',borderpad=-1.5)
+fig3A.colorbar(sm1, ticks=[22, 25, 28], 
+              boundaries=np.arange(21.5, 28.5, 0.05),
+              cax=axins1, orientation='vertical', label='period (h)')  
+fig3A.colorbar(sm2, ticks=[22, 24, 26], 
+              boundaries=np.arange(21.5, 26.5, 0.05),
+              cax=axins2, orientation='vertical', label='period (h)')               
+fig3A.colorbar(sm3, ticks=[28, 29, 30], 
+              boundaries=np.arange(27.8, 30.2, 0.005),
+              cax=axins3, orientation='vertical', label='period (h)')                
+
 ax1.set_xticklabels([]); ax2.set_xticklabels([])
 ax2.set_ylabel('simulated $x$'); 
 ax3.set_xlabel('time (days)')
 ax1.set_ylim([-2.3, +2.3])
 ax2.set_ylim([-2.3, +2.3])
 ax3.set_ylim([-2.3, +2.3])
+
+fig3A.subplots_adjust(
+        top=0.915,
+        bottom=0.08,
+        left=0.135,
+        right=0.825,
+        hspace=0.2,
+        wspace=0.2)
 
 # Figures 3B
 fig3BCD = plt.figure(figsize=(6.5,6))
@@ -169,14 +195,6 @@ ax4.legend(loc=2, framealpha=0.0);
 ax4.set_xlabel('period (h)'); 
 ax4.set_ylabel('number of oscillators'); 
 ax4.set_aspect(1.0/ax4.get_data_ratio(), adjustable='box')
-
-fig3A.subplots_adjust(
-        top=0.915,
-        bottom=0.08,
-        left=0.215,
-        right=0.96,
-        hspace=0.2,
-        wspace=0.2)
 
 ##############################
 #%% Load results and plot Figure 3C,D, Supplementary Figure 4
@@ -374,8 +392,8 @@ isExist = os.path.exists('./figures/')
 if not isExist:  
     os.makedirs('./figures/')
 
-fig3A.savefig('./figures/fig3A.pdf', format='pdf')
-fig3BCD.savefig('./figures/fig3BCD.pdf', format='pdf')
-suppfig4.savefig('./figures/suppfig4.pdf', format='pdf')
+#fig3A.savefig('./figures/fig3A.pdf', format='pdf')
+#fig3BCD.savefig('./figures/fig3BCD.pdf', format='pdf')
+#suppfig4.savefig('./figures/suppfig4.pdf', format='pdf')
 
 

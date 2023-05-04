@@ -206,8 +206,8 @@ isExist = os.path.exists('./figures/')
 if not isExist:  
     os.makedirs('./figures/')
 
-suppfig1.savefig('./figures/suppfig1.pdf', format='pdf')
-fig1B.savefig('./figures/fig1B.pdf', format='pdf')
+#suppfig1.savefig('./figures/suppfig1.pdf', format='pdf')
+#fig1B.savefig('./figures/fig1B.pdf', format='pdf')
 
 
 
