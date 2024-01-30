@@ -1,7 +1,7 @@
 <!-- badges: start -->
 <!--<a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE205155"><img src="https://img.shields.io/badge/Data-GSE205155-green.svg?style=plastic" alt="" /></a>-->
 <!--[![](https://img.shields.io/badge/Data-10.1101/2022.06.03.494693-blue.svg)](https://doi.org/10.1101/2022.06.03.494693)-->
-[![](https://img.shields.io/badge/Preprint-10.1101/2023.02.12.528191-yellow.svg)](https://www.biorxiv.org/content/10.1101/2023.02.12.528191v1)
+[![](https://img.shields.io/badge/Preprint-10.1101/2023.02.12.528191-yellow.svg)](https://www.sciencedirect.com/science/article/pii/S2405844024008041)
 <!--[![](https://img.shields.io/badge/Data-10.1101/2022.06.03.494693-blue.svg)](https://doi.org/10.1101/2022.06.03.494693)-->
  <!-- badges: end -->
 
